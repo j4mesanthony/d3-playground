@@ -1,12 +1,23 @@
-import './App.css'
+import './App.css';
+import { SideBarLayout } from './layouts/SideBarLayout';
 
 function App() {
 
   return (
     <>
-      <h1 className='underline'>D3</h1>
+      <SideBarLayout 
+        side={ <Menu /> } 
+        main={ <Main /> } />
     </>
   )
 }
 
-export default App
+function Menu() {
+  return <h1 className='text-lg'>D3 Playground</h1>
+}
+
+function Main() {
+  return <h1 className='text-lg'>Graph Interaction</h1>
+}
+
+export default App;

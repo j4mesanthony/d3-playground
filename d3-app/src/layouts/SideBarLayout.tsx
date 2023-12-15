@@ -3,10 +3,10 @@ import { ReactNode } from "react"
 type Props = {
     side: ReactNode,
     main: ReactNode,
-    rightSide: boolean,
+    rightSide?: boolean,
 }
 
-export function SideBarLayout({ side, main, rightSide }: Props) {
+export function SideBarLayout({ side, main, rightSide = false }: Props) {
     return (
         <div className={ `flex flex-row ${ rightSide && 'flex-row-reverse'}` }>
             <div className='grow-[1]'>
