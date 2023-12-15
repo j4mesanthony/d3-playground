@@ -9,7 +9,8 @@ const meta: Meta<typeof Button> = {
     component: Button,
     tags: ['autodocs'],
     args: {
-        label: 'Button'
+        label: 'Button',
+        disabled: false,
     }
 }
 
