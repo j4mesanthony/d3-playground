@@ -1,5 +1,5 @@
 import { useState, ChangeEvent } from "react"
-import { capitalise } from '../../utils/stringsUtils';
+import { toTitleCase } from '../../utils/stringsUtils';
 
 type Props = {
     autocaps?: boolean;
@@ -13,7 +13,7 @@ export function InputField({ autocaps = true, isDisabled = false, placeholder, t
 
     function handleChange(e: ChangeEvent<HTMLInputElement>) {
         if (isDisabled) return;
-        const val = autocaps ? capitalise(e.target.value) : e.target.value;
+        const val = autocaps ? toTitleCase(e.target.value) : e.target.value;
         setValue(val);
     }
 

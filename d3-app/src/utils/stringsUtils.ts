@@ -1,8 +1,8 @@
 /**
  * @param input 
- * @returns input string with first character capitalised
+ * @returns input string with first character capitalised regardless of how many words
  */
-export function toTitleCase(input: string): string {
+export function capitaliseFirstLetter(input: string): string {
     if (!input) return '';
     return input[0].toUpperCase() + input.substring(1);
 }
@@ -11,7 +11,7 @@ export function toTitleCase(input: string): string {
  * @param input 
  * @returns input string with each word capitalised
  */
-export function capitalise(input: string): string {
+export function toTitleCase(input: string): string {
     if (!input) return '';
-    return input.split(' ').map(x => toTitleCase(x)).join(' ');
+    return input.split(' ').map(x => capitaliseFirstLetter(x)).join(' ');
 }
