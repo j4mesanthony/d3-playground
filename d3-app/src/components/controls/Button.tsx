@@ -2,9 +2,9 @@ import { Icon } from "../ui/Icon";
 
 type Props = {
     label: string,
-    disabled: boolean,
+    disabled?: boolean,
     onClick: () => void,
-    icon: string,
+    icon?: string,
     btnClasses?: string
 }
 

@@ -8,12 +8,12 @@ type Props = {
 
 export function SideBarLayout({ side, main, rightSide = false }: Props) {
     return (
-        <div className={ `flex flex-row ${ rightSide && 'flex-row-reverse'}` }>
+        <div className={ `flex flex-row gap-10 ${ rightSide && 'flex-row-reverse'}` }>
             <div className='grow-[1]'>
                 { side }
             </div>
 
-            <div className='grow-[2]'>
+            <div className='grow-[4]'>
                 { main }
             </div>
         </div>
