@@ -24,7 +24,7 @@ function Menu() {
     <>
       <h1 className='text-lg'>D3 Playground</h1>
       <div className='flex flex-col gap-4'>
-        <InputField placeholder='Enter text here...' isDisabled={ disabled } />
+        <InputField placeholder='Enter text here...' isDisabled={ disabled } isRequired />
         <Button label={ label } onClick={ () => setDisabled(!disabled) } />
       </div>
     </>
