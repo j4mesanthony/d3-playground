@@ -9,8 +9,9 @@ const meta: Meta<typeof InputField> = {
     component: InputField,
     tags: ['autodocs'],
     args: {
-        autocaps: true,
+        titlecase: true,
         isDisabled: false,
+        isRequired: false,
         placeholder: 'Enter content here...',
         type: 'string',
     }
